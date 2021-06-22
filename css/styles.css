@@ -3,14 +3,26 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.heading_font {
+    font-family: 'Berkshire Swash', cursive;
+}
+
 a {
     text-decoration: none;
     color: unset;
 }
+
 h1 {
     text-align: left;
+    font-size: 5rem;
 }
-header {
+
+header>nav {
     height: 4rem;
 }
 
@@ -23,4 +35,31 @@ header>nav>ul>li {
     display: inline-block;
     border-radius: 25px;
     padding: .5rem 1rem;
+    text-transform: uppercase;
+}
+
+header .hero_wrapper {
+    height: 480px;
+    /* background-color: blue; */
+    position: relative;
+}
+
+header .hero_wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+header .hero_wrapper>.hero_text_wrapper {
+    position: absolute;
+    top: 15rem;
+    left: 1rem;
+    padding: 1rem;
+}
+header .hero_wrapper>.hero_text_wrapper p {
+    background-color: #fff;
+    padding: 0 .3rem;
+}
+header .hero_wrapper>.hero_text_wrapper p,
+header>nav>ul>li {
+    font-weight: 700;
 }
