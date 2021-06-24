@@ -17,6 +17,21 @@ a {
     color: unset;
 }
 
+.row {
+    clear: both;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+
 h1 {
     text-align: left;
     font-size: 5rem;
@@ -33,9 +48,8 @@ header>nav>ul {
 
 header>nav>ul>li {
     display: inline-block;
-    border-radius: 25px;
+    border-radius: 1.56rem;
     padding: .5rem 1rem;
-    text-transform: uppercase;
 }
 
 header .hero_wrapper {
@@ -55,11 +69,54 @@ header .hero_wrapper>.hero_text_wrapper {
     left: 1rem;
     padding: 1rem;
 }
+
 header .hero_wrapper>.hero_text_wrapper p {
     background-color: #fff;
     padding: 0 .3rem;
 }
+
 header .hero_wrapper>.hero_text_wrapper p,
 header>nav>ul>li {
     font-weight: 700;
+}
+
+/* MAIN */
+
+main {
+    min-height: 40rem;
+    padding: 4.5rem;
+}
+
+header>nav>ul>li, 
+main .row>.column>h2 {
+    text-transform: uppercase;
+
+}
+
+/* FOOTER */
+
+footer {
+    min-height: 16.25rem;
+    padding: 3.5rem;
+    font-weight: 300;
+    font-size: 1.2rem;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+footer>p {
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+footer .row>p {
+    margin-top: 7rem;
+}
+
+footer #social_links {
+    text-align: center;
+}
+
+footer #social_links a:hover i {
+    color: lightslategray;
 }
